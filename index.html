@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Oceans and Rivers: The Global Garbage Cans</title>
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+
+	<body>
+		<header class="navbar">
+			<a href="#" class="logo">Water Boys</a>
+			<div class="navbar_toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navbar_menu">
+				<li class="navbar_item"><a href="#home" class="active">Home</a></li>
+				<li class="navbar_item"><a href="#overview">Overview</a></li>
+				<li class="navbar_item"><a href="#data">Data</a></li>
+				<li class="navbar_item"><a href="#methods">Methods</a></li>
+				<li class="navbar_item"><a href="#results">Results</a></li>
+				<li class="navbar_item"><a href="#discussion">Discussion</a></li>
+				<li class="navbar_item"><a href="#conclusion">Conclusion</a></li>
+				<li class="navbar_item"><a href="#team">Team</a></li>
+			</ul>
+		</header>
+
+		<script type="text/Javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 0);
+			})
+		</script>
+
+		<!-- Home section -->
+		<article id="home" style="margin-left: 100px; margin-right: 100px;">
+			<div class="home-container">
+				<span id="span_home">
+					<br><br><br>
+					<p class="heading-1" id="title">
+						<strong>Oceans and Rivers:</strong>
+					</p>
+					<p class="heading-1">
+						<strong>The Global Garbage Cans</strong>
+					</p>
+					<br>
+					<br>
+					<p class="heading-3">
+						<i>An analysis of the status of SDG 6:
+							<br>
+							Clean Water and Sanitation in the Philippines.</i>
+						<br>
+						<br><br>
+					</p>
+
+					<span class="general-text">
+						<p>
+							We are the <strong>Water Boys</strong> and we’re diving deep into data to surface solutions for sustainable water in the Philippines.
+						</p>
+					</span>
+
+					<!-- <ul class="horz-list">
+						<li><b>Yanni Ella</b><br>WFZ Winter</li>
+						<li><b>Jensen Rabatan</b><br>WFZ Winter</li>
+						<li><b>Dean Ramirez</b><br>WFZ Winter</li>
+						<li><b>Nadinne Sumulong</b><br>WFZ Winter</li>
+					</ul> -->
+					
+				</span>
+			</div>
+		</article>
+		
+
+
+		<!-- Overview section -->
+		<article id="overview" style="margin-left: 100px; margin-right: 100px;">
+			<br>
+			<p class="heading-1">Here's an <a style="color: blue;">overview</a> of our project.</p>
+			<div class="heading-4" style="text-align: center;">
+				<br>Our project is an analysis of the status of SDG 6: Clean Water and Sanitation in the Philippines. The Water Boys aims to use its Data Science knowledge to analyze water quality across the different regions of the Philippines to find new insights and share it with the country.
+			</div>
+
+			<!-- Motivation, Problem, Solution -->
+
+			<div class="ov-text" id="overview-text">
+
+				<div>
+					<img class="image-w-text" src="/images/Motivation.png">
+					
+					<p class="text-of-img">Motivation</p>
+					<p class="cont-text">
+						The Philippines depends on water as a source of life, livelihood, and sanitation, but as Jacques Cousteau, the co-inventor of the first scuba set, once said “Water and air, the two essential fluids on which all life depends, have become global garbage cans.” This is why we decided to focus on SDG 6, as all life depends on clean water.
+					</p>
+				</div>
+				
+				<div>
+					<img class="image-w-text" src="/images/Problem.png">
+					
+					<p class="text-of-img">Problem</p>
+					<p class="cont-text">
+						Access to clean water and sanitation is a critical issue in the Philippines, with many regions facing challenges related to water quality, availability, and sanitation facilities.
+					</p>
+				</div>
+
+				<div>
+					<img class="image-w-text" src="/images/Solution.png">
+					
+					<p class="text-of-img">Solution</p>
+					<p class="cont-text">
+						Utilize data science techniques to analyze the status of SDG 6: Clean Water and Sanitation in the Philippines, uncover insights about water quality, sanitation practices, and their implications for public health and environmental sustainability.
+					</p>
+				</div>
+			</div>
+
+			<!-- Background -->
+
+			<div class="ov-bgtext">
+				<div class="ov-background">
+					<p style="font-size: 17px;">
+						<br>
+						<strong><em>Water has always been an integral part of the Philippines as it is surrounded by abundant water resources.</em></strong>
+						<br><br>
+						These bodies of water are essential in sustaining life, ecosystem, and the livelihood of many. However, despite the ample water resources, the Philippines is still facing water stress or lack of clean and accessible water<a class="ref-num" href="https://legacy.senate.gov.ph/publications/SEPO/State%20of%20Water%20AAG_August%202023.pdf">[1]</a>. The quality of these water resources has long been under threat by various natural phenomena and human activities especially with the rapid increase in population, urbanization, and industrialization<a class="ref-num" href="https://wepa-db.net/archive/policies/state/philippines/overview.htm">[2]</a>. Moreover, the Philippines ranks among the world's top contributors to water pollution, which poses great threats on human health, agriculture, fisheries, and tourism<a class="ref-num" href="https://www.developmentaid.org/news-stream/post/155108/water-pollution-in-the-philippines">[3]</a>. This study strives to deepen our understanding of the various pollutants in the Philippines’ bodies of water, ultimately paving the way for improved water preservation.
+						<br><br>
+					</p>
+					
+					<p class="heading-2">
+						<strong>BACKGROUND</strong>
+					</p>
+				</div>
+				<br>
+
+				<div class="ov-refs">
+					<span class="ref-images">
+						<span>
+							<a href="https://legacy.senate.gov.ph/publications/SEPO/State%20of%20Water%20AAG_August%202023.pdf">
+								<div class="circle-img blue-1">1</div>
+							</a>
+							<a href="https://legacy.senate.gov.ph/publications/SEPO/State%20of%20Water%20AAG_August%202023.pdf">
+								<br>The State of Water<br>at a Glance
+								<br>
+							</a>
+						</span>
+						<span>
+							<a href="https://wepa-db.net/archive/policies/state/philippines/overview.htm">
+								<div class="circle-img blue-2">2</div>
+							</a>
+							<a href="https://wepa-db.net/archive/policies/state/philippines/overview.htm">
+								<br>State of Water:<br>Philippines
+							<br>
+							</a>
+						</span>
+						<span>
+							<a href="https://www.developmentaid.org/news-stream/post/155108/water-pollution-in-the-philippines">
+								<div class="circle-img blue-3">3</div>
+							</a>
+							<a href="https://www.developmentaid.org/news-stream/post/155108/water-pollution-in-the-philippines">
+								<br>Water Pollution in the Philippines
+								<br>
+							</a>
+						</span>
+					</span>
+				</div>
+				<br>
+			</div>
+
+
+			<!-- Research questions section -->
+			<div class="ov-rq">
+				<p style="font-size: 25px; text-align: center;">
+					This led us to ask two questions.
+				</p>
+				<br><br>
+				<div>
+					<p class="heading-3"><b>1. How do water quality parameters vary across different regions and water bodies in the Philippines?</b></p>
+					<br>
+					<div class="hypothesis-container">
+						<span>
+							<p class="heading-4" style="text-align: center;"><b>Null Hypothesis</b></p>
+							<br>
+							<p>There is no significant difference in water quality parameters across different regions and water bodies in the Philippines.</p>
+						</span>
+						<span>
+							<p class="heading-4" style="text-align: center;"><b>Alternative Hypothesis</b></p>
+							<br>
+							<p>pH levels, dissolved oxygen concentrations, turbidity, etc., vary considerably depending on geographic location, water use practices, and pollution sources.</p>
+						</span>
+					</div>
+				</div>
+				<br>
+				<div>
+					<p class="heading-3"><b>2. How have the water quality parameters for each waterbody changed from 2019 to 2021?</b></p>
+					<br>
+					<div class="hypothesis-container">
+						<span>
+							<p class="heading-4" style="text-align: center;"><b>Null Hypothesis</b></p>
+							<br>
+							<p>There is no significant change in the water quality parameters in the various water bodies from 2019 to 2021.</p>
+						</span>
+						<span>
+							<p class="heading-4" style="text-align: center;"><b>Alternative Hypothesis</b></p>
+							<br>
+							<p>There is a significant change in the water quality parameters in the various water bodies from 2019 to 2021.</p>
+						</span>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<!-- Action plan -->
+			<div class="ov-plan">
+				<p class="heading-2">
+					
+					So what  was the plan of action?
+				</p>
+				<p class="ov-plan-text">
+					<br>
+					<b>1. Data Collection:</b> Gather data on water quality parameters from various sources. Collect information on parameters such as BOD, chloride, color, DO, fecal coliform, nitrate, PH, phosphate, temperature, and TSS.
+					<br><br>
+					<b>2. Data Analysis:</b> Analyze the collected data to understand the distribution and trends of water quality parameters across different regions and water bodies in the Philippines. Use statistical methods to assess variations and identify factors influencing water quality.
+					<br><br>
+					<b>3. Interpretation:</b> Interpret the findings to determine the implications of water quality parameters variations for environmental health and public safety. Discuss the potential impact on ecosystems, public health, and economic activities dependent on clean water sources.
+					<br><br>
+					<b>4. Recommendation:</b> Provide recommendations for water resource management, pollution control measures, and policy interventions aimed at addressing identified water quality issues and safeguarding environmental health and public safety.
+					<br><br>
+					<b>5. Presentation:</b> Present the findings and recommendations in a clear and accessible manner through reports, presentations, or visualizations. Communicate the importance of addressing water quality challenges to achieve SDG 6 targets and promote sustainable development in the Philippines.
+				</p>
+			</div>
+			<br>
+		</article>
+			
+
+
+		<!-- Data section -->
+		<article id="data"  style="margin-left: 100px; margin-right: 100px;">
+			<br>
+			<p class="heading-1">How did we collect our data?</p>
+			<br><br><br>
+			<p class="heading-4">We found three data sources from DENR - Environmental Management Bureau.</p><br><br>
+			<p class="heading-4">
+				Each dataset monitoring the ambient water quality of different freshwater bodies in the Philippines. The data from the sources were from the years 2019 to 2021, and from these sources, only the water bodies with records available in all years were considered when building our dataset.
+			</p>
+			<br><br>
+
+			<div class="data-text">
+				<span class="heading-3">
+					 View our dataset here
+				</span>
+				<span class="heading-3">
+					 View our data collection document here
+				</span>
+			</div>
+
+			<div>
+
+			</div>
+		</article>
+			
+
+
+		<!-- Methods section -->
+		<article id="methods">
+			<br>
+			<p class="heading-1"><a style="color: cadetblue;">Method</a>ology</p>
+			<br><br>
+			<p class="heading-4" style=" margin-left: 100px; margin-right: 100px;">Our methodology encompasses a systematic approach to collecting and analyzing data. We employ rigorous statistical techniques to test our hypotheses, ensuring the reliability and validity of our findings. This process includes detailed data pre-processing procedures, analytical methods, and tools used to interpret the results within the context of our research objectives.</p>
+			<br><br><br>
+
+			<span class="pre-processing">
+				<p class="heading-3">1. Pre-processing</p>
+				<br>
+				<p>Data preprocessing is a crucial step in our methodology, involving the cleaning and transformation of raw data into a format suitable for analysis. This phase ensures accuracy by addressing missing values, outliers, and inconsistencies, and by normalizing and scaling the data to prepare it for subsequent statistical testing.</p>
+				<br>
+				<p class="see-more" onclick="toggleAccordionContent(this)"><i>See more</i></p>
+
+				<!-- To show -->
+				<span class="additional-content">
+					<span style="text-align: justify;">
+						<p class="text-small-title">a. Dataset</p>
+						<p style="margin-left: 20px; margin-right: 20px;">The data from the sources were from the years 2019 to 2021, and from these sources using <b>Purposive Sampling</b>, only the water bodies with records available in all years were considered when building our dataset. The data was then cleaned by fixing blank cells as follows:</p>
+						<ul style="margin-left: 40px; margin-right: 20px;">
+							<li>If the waterbody's parameter values for all three years were blank, set all of the yearly values to 0 (with regards to the parameter).<br></li>
+							<li>If the cell has no parameter for one or two years, get the average of the waterbody's parameter value(s) that exist and set the blank to the average.</li>
+						</ul>
+						<br>
+						<p class="text-small-title">b. Research Question 1</p>
+						<p style="margin-left: 20px; margin-right: 20px;">The water quality parameters values were <b>normalized</b> since we’re dealing with variables having different units or scales. By doing this, we can ensure that each parameter contributes equally to the analysis and that no single parameter dominates due to its scale. The formula used for the normalized value is: <b>(parameter value - mean) / standard deviation</b>.</p>
+						<br>
+						<p class="text-small-title">c. Research Question 2</p>
+						<p style="margin-left: 20px; margin-right: 20px;">The water quality parameters values were <b>transformed</b> since we’re dealing with variables having outliers. By doing this, we can ensure that each parameter contributes equally to the analysis and that no single parameter dominates due to its extremeness. We used NumPy’s log transformation function <b>(np.log1p())</b> and SciKit-Learn’s MinMax Scaling function <b>(MinMaxScaler())</b> to do this.</p>
+						<br>
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="pre-processing">
+				<p class="heading-3">2. Hypothesis Testing</p>
+				<br>
+				<p>Hypothesis Testing assesses if sample data reflects a true effect or is due to chance, guiding decisions with statistical evidence. The process involves setting up a null hypothesis that there is no effect or difference, and an alternative hypothesis that there is an effect or difference. Statistical tests are then performed to determine whether the observed data is significantly different from what would be expected under the null hypothesis. Upon consultation, we only tested the null hypothesis of research question 2.</p>
+				<br>
+				<p style="text-align: right;"><a href="https://docs.google.com/document/d/1q4f_aOVwHAkB0kLZ04gC_EhQmJMiINZXTAna7Mb1OI0/edit?usp=sharing">Hypothesis testing document</a></p>
+				<br>
+				<p class="see-more" onclick="toggleAccordionContent(this)"><i>See more</i></p>
+
+				<!-- To show -->
+				<br>
+				<span class="additional-content">
+					<span style="text-align: justify;">
+						<p class="text-small-title">a. Statistical Test: Multivariate Analysis of Variance (MANOVA)</p>
+						<p style="margin-left: 20px; margin-right: 20px;">Note: We aim to find the difference in water quality parameters (dependent variables) in various water bodies from 2019 to 2021 (independent variables). Research includes multiple dependent variables that are potentially correlated, hence, we use MANOVA instead of repeated ANOVA. t. Using multiple ANOVAs would increase the risk of a Type I error (a significant finding which occurs by chance due to repeating the same test a number of times).</p> 
+						<br>
+						<p style="margin-left: 20px; margin-right: 20px; text-align: right;"><a href="https://us.sagepub.com/sites/default/files/upm-assets/9761_book_item_9761.pdf">Reference</a></p>
+						<br>
+
+						<p class="text-small-title">b. CSV File</p>
+						<p style="margin-left: 20px; margin-right: 20px;">Note: The raw dataset used for the statistical testing includes the following columns: Body of Water, BOD 2019, BOD 2020, BOD 2021, … , TSS 2019, TSS 2020, TSS 2021. This was eventually preprocessed into long format with the following columns: Body of Water, Year, BOD, CHLORIDE, COLOR, DO, FECAL COLI, NITRATE, PH, PHOSPHATE, TEMP, TSS</b>.</p>
+						<br>
+						<p style="margin-left: 20px; margin-right: 20px; text-align: right;"><a href="https://colab.research.google.com/drive/1nHMn6pGjaIAmzisrVN78gidBY3YrSYM_#scrollTo=3h4J0y6mKq7S">Code without log transformation</a></p>
+						<p style="margin-left: 20px; margin-right: 20px; text-align: right;"><a href="https://colab.research.google.com/drive/1-_IHg-GtrJ8e-AVGREbCdES712xGj0yg#scrollTo=0bgMnptSkGqc">Code with log transformation</a></p>
+					</span>
+				</span>
+			</span>
+			
+			<span>
+
+			</span>
+
+
+		</article>
+			
+
+
+		<!-- Results section -->
+		<article id="results"  style="margin-left: 100px; margin-right: 100px;">
+			<br>
+			<p class="heading-1">Here are the <b style="color: blue;">test results.</b></p>
+			
+			<!-- Hypothesis testing -->
+			<span class="pre-processing" style="border: none;">
+				<p class="heading-3" style="text-align: center;">Hypothesis</p>
+				<br><br>
+				<p class="heading-4" style="text-align: center;">
+					<b>We reject the Null Hypothesis</b>, supporting the alternative hypothesis that there are significant changes in water quality parameters over the years 2019-2021.
+				</p>
+				<br>
+				<p class="heading-4" style="text-align: center;">
+					We <b>looked for statistically significant p-values (Pr > F)</b> in each section. A low p-value (below level of significance 0.05) indicates that the variable or interaction term has a significant effect on the dependent variables. From the results, we found that Wilks' lambda is close to 0, Pillai's trace is close to 1, and Hotelling-Lawley trace and Roy's greatest root has large F values which supports our hypothesis that <b>there is a significant change in the water quality parameters in the various water bodies from 2019 to 2021</b>. 
+				</p>
+				<br><br>
+				<p style="text-align: center;"><i>(Press see more to see the visualization and detailed interpretations)</i></p>
+				
+
+				
+				<br>
+				<p class="see-more" onclick="toggleAccordionContent(this)"><i>See more</i></p>
+				<br>
+				<!-- To show -->
+				<span class="additional-content">
+					<span style="text-align: justify;">
+						<span class="hyp-result-images">
+							<span>
+								<p class="heading-4" style="text-align: center;">Without log transformation</p>
+								<img src="/images/wo log trans.png">
+							</span>
+							<span>
+								<p class="heading-4" style="text-align: center;">With log transformation</p>
+								<img src="/images/with log trans.png">
+							</span>
+						</span>
+						<br>
+
+						<ul>
+							<li><b>Intercept:</b> This row represents the overall intercept of the model. The statistics include Wilks' lambda, Pillai's trace, Hotelling-Lawley trace, and Roy's greatest root, which are different ways to measure the effect of the independent variables on the dependent variables.</li>
+							<li><b>Wilks' lambda:</b> demonstrates the amount of variance accounted for in the dependent variable by the independent variable; the smaller the value, the larger the difference between the groups being analyzed.</li>
+							<li><b>Pillai's trace:</b> another statistic measuring the effect of on the dependent variables. It ranges from 0 to 1 and a higher value indicates a significant effect.</li>
+							<li><b>Hotelling-Lawley trace:</b> is used when the independent variable forms two groups and represents the most significant linear combination of the dependent variables. Reject the null hypothesis if this test statistic is large.</li>
+							<li><b>Roy's greatest root:</b> is calculated in a similar fashion to Pillai's trace except it only considers the largest eigenvalue (i.e. the largest loading onto a vector). Increasing values for the statistic indicate increasing contributions by effects to the model in question.</li>
+							<li><b>Body_of_Water:</b> Results specific to the variable “Body_of_Water”</li>
+							<li><b>Year:</b> Results specific to the variable “Year”</li>
+							<li><b>Body_of_Water:Year:</b> Represents interaction of “Body_of_Water” and “Year” and how the combination of these two variables influences the dependent variables.</li>
+						</ul>
+						<br><br>
+						<span class="log-scores">
+							<span>
+								<p class="heading-4">Without log transformation</p>
+								<ul style="padding: 20px;">
+									<li style="margin-left: 20px;">Year: Significant (p < 0.05)</li>
+									<li style="margin-left: 20px;">Body_of_Water: Mixed significance, with Roy's Greatest Root significant</li>
+									<li style="margin-left: 20px;">Body_of_Water:Year: Mixed significance, with Roy's Greatest Root significant</li>
+								</ul>
+							</span>
+							<span>
+								<p class="heading-4">With log transformation</p>
+								<ul style="padding: 20px;">
+									<li style="margin-left: 20px;">Year: Significant (p < 0.05)</li>
+									<li style="margin-left: 20px;">Body_of_Water: Mixed significance, with Roy's Greatest Root significant</li>
+									<li style="margin-left: 20px;">Body_of_Water:Year: Mixed significance, with Roy's Greatest Root significant</li>
+								</ul>
+							</span>
+						</span>
+						
+						<br>
+					</span>
+				</span>
+				<hr>
+			</span>
+			<br>
+
+			<!-- Research question 1 -->
+			<span class="pre-processing" style="border: none;">
+				<p class="heading-3" style="text-align: center;">Research Question 1</p>
+				<br><br>
+				<p class="heading-4" style="text-align: center;">
+					How do <i>water quality parameters</i> vary across different <i>regions and water bodies</i> in the Philippines?
+				</p>
+				<br><br>
+				<p class="heading-4" style="text-align: center;"><b>Interpretation:</b></p>
+				<br>
+				<p class="heading-4" style="text-align: center;">
+					Parameters like pH, Temperature, and Dissolved Oxygen show more uniform distributions, indicating less variation across regions. Parameters such as TSS, Nitrate, Fecal Coliform, Chloride, Color, BOD, and Phosphate show significant variability, highlighting areas with potential pollution concerns.
+				</p>
+				<br><br>
+				<p style="text-align: center;"><i>(Press see more to see the visualization and detailed interpretations)</i></p>
+				
+
+				<br>
+				<p class="see-more" onclick="toggleAccordionContent(this)"><i>See more</i></p>
+				<br>
+				<!-- To show -->
+				<span class="additional-content">
+					<span class="rq-cols">
+						<span class="rq-image">
+							<img src="/images/primary_graph.png">
+						</span>
+						<span class="rq-interp">
+							<p class="heading-4"><b>Parameters</b></p>
+							<br>
+							<b>pH and Temperature:</b> These parameters are relatively stable across regions, with most values close to the mean. A few regions show slightly higher or lower values, but there are no extreme outliers.
+							<br><br>
+							<b>Dissolved Oxygen (DO):</b> Regions with blue cells have lower-than-average DO, which can indicate decreasing oxygenation and poor water quality. Dissolved oxygen (DO) concentrations are normally sufficient to maintain healthy biotic assemblages in unpolluted, free-flowing streams, but low or extremely high DO levels can impair or kill fishes and invertebrates.
+							<br><br>
+							<b>Total Suspended Solids (TSS):</b> Higher TSS levels (red cells) are observed in some regions, indicating higher sediment matter. Lower TSS levels (blue cells) suggest clearer water. When it comes to water quality, high TSS may decrease water's natural dissolved oxygen levels and increase water temperature.
+							<br><br>
+							<b>Nitrate:</b> Variability in nitrate levels is seen, with some regions showing high levels (red cells), which can indicate agricultural runoff and urban pollution. High nitrate levels are a concern for eutrophication and drinking water safety.
+							<br><br>
+							<b>Fecal Coliform:</b> Elevated fecal coliform levels (red cells) indicate potential contamination from different bacteria, posing health risks. Lower levels (blue cells) indicate cleaner water.
+							<br><br>
+							<b>Chloride:</b> High chloride levels are typically associated with having high or elevated total dissolved solids. These can be observed in urban and industrial regions, reflecting pollution from road salt, industrial discharge, and sewage.
+							<br><br>
+							<b>Color:</b> Highly colored water has significant effects on aquatic plants and algal growth. Light is very critical for the growth of aquatic plants and colored water can limit the penetration of light.
+							<br><br>
+							<b>Biochemical Oxygen Demand (BOD):</b> High BOD levels (red cells) are observed in regions with significant organic pollution, reducing oxygen availability for aquatic life. Lower BOD levels (blue cells) indicate less organic pollution.
+							<br><br>
+							<b>Phosphate:</b> Excessive phosphorus in surface water can cause explosive growth of aquatic plants and algae. This can lead to a variety of water-quality problems.
+							<br><br>
+							<b>Urban Regions (NCR, Region 3, Region IV-A, Region 11, Region 12):</b> Higher levels of pollutants like chloride, fecal coliform, color, BOD, and phosphate, reflecting urban runoff, industrial discharge, and sewage.
+						</span>
+					</span>
+					<br>
+					<span>
+						<p><b>Type of Graph:</b> Cluster map</p>
+						<br>
+						
+						<b>Color Scale:</b> Warmer colors represent higher normalized values of the water quality parameters while cooler colors represent lower values.
+						<br><br>
+						<b>Rows and Columns:</b> Each row represents a region-waterbody combination, while each column represents a water quality parameter.
+						<br><br>
+						<b>Preprocessing:</b> The water quality parameters values were normalized since we’re dealing with variables having different units or scales. By doing this, we can ensure that each parameter contributes equally to the analysis and that no single parameter dominates due to its scale. The formula used for the normalized value is: (parameter value - mean) / standard deviation.
+						<br><br>
+						Code: <a href="https://drive.google.com/file/d/1oT2ASoeAJ2btDAb-J-QK6-nrdHt22zV1/view?usp=drive_link">clustermap.py</a>
+						<br>
+						CSV File: <a href="https://drive.google.com/file/d/1aoaMSykuuHtGQV28qFfKQvctteRM6_Tk/view?usp=drive_link">water_quality.csv</a>
+						<br>
+						Graph: <a href="https://drive.google.com/file/d/1_Ggv-an0xEY2vw6l0WahPYF5BNjtDfvv/view?usp=sharing">water_quality_cluster_map.png</a>
+						<br><br>
+					</span>
+				</span>
+				<hr>
+			</span>
+
+			<br>
+
+			<!-- Research question 2 -->
+			<span class="pre-processing" style="border: none;">
+				<p class="heading-3" style="text-align: center;">Research Question 2</p>
+				<br><br>
+				<p class="heading-4" style="text-align: center;">
+					How have the <i>water quality parameters</i> for each waterbody <i>changed from 2019 to 2021?</i>
+				</p>
+				<br><br>
+				<p class="heading-4" style="text-align: center;"><b>Interpretation:</b></p>
+				<br>
+				<p class="heading-4" style="text-align: center;">
+					Parameters such as pH, Dissolved Oxygen (DO), Chloride, Color, and Biochemical Oxygen Demand are observed to be increasing through the years. Regions 3, 4A, 11, 12 and 13 have relatively higher levels of the 10 parameters. This signifies possible pollution and low water quality. The only parameter that showed a decrease in levels for three years was temperature (in Region 4A).
+				</p>
+				<br><br>
+				<p style="text-align: center;"><i>(Press see more to see the visualization and detailed interpretations)</i></p>
+				
+
+				<br>
+				<p class="see-more" onclick="toggleAccordionContent(this)"><i>See more</i></p>
+				<br>
+				<!-- To show -->
+				<span class="additional-content">
+					<span class="rq-cols">
+						<span class="rq-interp">
+							<p class="heading-4"><b>Parameters</b></p>
+							<br>
+							<b>pH:</b> There is visible increase in pH values within the three years. Almost every waterbody obtained higher levels in 2020 and 2021. Although aquatic animals prefer higher pH levels, an extreme increase in pH levels can still negatively affect the biodiversity.
+							<br><br>
+							<b>Temperature:</b> These parameters are relatively stable across regions. Only Region 4A in particular has visible changes in coloring (darker to lighter). This means that temperatures in the said region have been decreasing.
+							<br><br>
+							<b>Dissolved Oxygen (DO):</b> Most of the regions see an increase in Dissolved Oxygen through time, especially waterbodies in rural areas. This can both be good and bad. As mentioned in the primary research question’s interpretation, low or extremely high DO levels can impair or kill fishes and invertebrates.
+							<br><br>
+							<b>Total Suspended Solids (TSS):</b> Most of the cells show stability with little changes in their colors. On the other hand, the TSS levels in waterbodies in Mindanao can be observed as relatively higher. Higher TSS may decrease water's natural dissolved oxygen levels and increase water temperature.
+							<br><br>
+							<b>Nitrate:</b> There is stability in almost all of the waterbodies. However, there are outliers with extremely high levels, potentially signifying urban pollution.
+							<br><br>
+							<b>Fecal Coliform:</b> Fecal Coliform levels are seen as stable. There are some rivers with high values, which indicates contamination.
+							<br><br>
+							<b>Chloride:</b> High, and increasing levels of chloride can be observed from waterbodies in Regions 3 and 4A.
+							<br><br>
+							<b>Color:</b> There is not much change in color levels in these waterbodies. There are some with increasing values.
+							<br><br>
+							<b>Biochemical Oxygen Demand (BOD):</b> Regions 3 and 4A show high BOD levels. These are regions with significant organic pollution, reducing oxygen availability for aquatic life. On the other hand, most of these values are stable.
+							<br><br>
+							<b>Phosphate:</b> Most values are low and stable throughout the years except for waterbodies in Regions 3 and 4A. Excessive phosphorus in surface water can cause explosive growth of aquatic plants and algae. This can lead to a variety of water-quality problems.
+							<br>
+							
+						</span>
+						<span class="rq-image">
+							<img src="/images/rq2graphs/PH.png">
+						</span>
+					</span>
+					<br>
+					
+
+					<span>
+						<b>NOTE: This is only one out of the 10 graphs that was made to compare each of the changes in water quality parameters within three years.</b> Please click <a href="https://docs.google.com/document/d/1tYg9MGDRra6pq94Otfuh8WAOcbH59QCBg18h_aDk1aQ/edit">here</a> to view every graph.
+						<br><br>
+						<p><b>Type of Graph:</b> Heat map</p>
+						<br>
+						
+						<b>Color Scale:</b> Darker colors represent higher values of the water quality parameters (dirtier water) while lighter colors represent lower values (cleaner water), except for the parameter Dissolved Oxygen (DO), and pH.
+						<br><br>
+						<b>Rows and Columns:</b> Each row represents a region-waterbody combination, while each column represents a year from 2019 to 2021.
+						<br><br>
+						<b>Preprocessing:</b> The water quality parameters values were transformed since we’re dealing with variables having outliers. By doing this, we can ensure that each parameter contributes equally to the analysis and that no single parameter dominates due to its extremeness. We used NumPy’s log transformation function (np.log1p()) and SciKit-Learn’s MinMax Scaling function (MinMaxScaler()) to do this.
+						<br><br>
+						Code: <a href="https://colab.research.google.com/drive/1ztvR6JJIT3DRaD4jbJU1ygWTvzsk1dBx?usp=sharing">rq_2_heat_maps.ipynby</a>
+						<br>
+						CSV File: <a href="https://drive.google.com/file/d/1z6NY8Ub5VQweZPMDjZmkrszexQJGZPbY/view?usp=sharing">waterquality.csv</a>
+						<br>
+						Graph: <a href="https://drive.google.com/drive/folders/1Ii9TLl6mGr-os2AshtQ6qJjn4gllnraJ?usp=sharing">rq2_graphs</a>
+						<br><br>
+					</span>
+				</span>
+				<hr>
+			</span>
+
+			<span class="nutshell">
+				<br>
+				<p class="heading-2">NutShell Graph</p>
+				<br>
+				<p class="heading-4" style="text-align: center;">Flow of Progress: Water Quality Enhancements in Major Philippine Rivers (2019-2021)</p>
+				<br>
+				<p style="text-align: center;">How clean were some of the <i>most impactful bodies of water</i> from 2019 to 2021?</p>
+				<br>
+				<br>
+				<img src="/images/nutshell_graph.jpg">
+				<br>
+				<p style="text-align: center; font-size: smaller;"><a href="https://docs.google.com/document/d/1MRCmOi7rwgFUxGB5aaV5CbUPf8lcMTV59rLvlwNix58/edit">(document link)</a></p>
+				
+				<br><br>
+				<p style="text-align: justify;">
+					The graph <b>depicts the change in water quality from 2019 to 2021 for ten major rivers in the Philippines,</b> chosen based on their priority and impact, based on previous research. The Y-axis represents the years, while the color gradient shows water quality: darker green indicates poorer quality, and lighter blue indicates better quality. Water quality was calculated as the mean of the 'passes' for all parameters using the formula: number of passes / total number of parameters. <br><br><b>Key observations include:</b>
+					<br>
+				</p>
+				<ul>
+					<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+						Bagatayam River is the cleanest, with the river having passed all parameters in the years 2020 and 2021, and passing 8/10 parameters in 2019.
+					</li>
+					<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+						Jalaur River: is the dirtiest overall, passing only 4/10 parameters in 2019, and improving by 1 parameter every year. It is followed by Guadalupe River, passing 5/10 parameters in 2019 and 2020, and passing 6/10 in 2021.
+					</li>
+					<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+						Pampanga River: The consistent, passing 7/10 parameters over the three years.
+					</li>
+				</ul>
+				<br><br><br>
+				<p class="heading-3">Overall, the graph shows a general <a style="color: blue;">improvement in water quality</a> over this period.</p><br><br><br>
+				<p>We represented 10 of the most impactful out of the 90+ water bodies. The impact was based on these sources: <a href="https://r7.emb.gov.ph/wp-content/uploads/2022/10/r7-2020-ANNUAL-WATER-QUALITY-STATUS-REPORT.pdf">[Source 1] </a><a href="https://www.developmentaid.org/news-stream/post/155108/water-pollution-in-the-philippines">[Source 2]</a></p><br>
+				<p>Gradient color/value represents how ‘clean’ a body of water is based on the number of ‘passing’ water quality parameters per waterbody. A value of 1.0 is the brightest and represents the ‘cleanest’ overall. This value is calculated by taking the <b>sum of all passing parameters and dividing by the total number of parameters.</b></p>
+				<br>
+				<p class="heading-4">Formula:</p>
+				<img src="/images/formula.png" style="width: 300px; height: auto; display: block; margin: auto;">
+				<p class="heading-4">Color Scale:</p>
+				<p style="text-align: justify;"><b>Darker and greener colors</b> represent ‘dirtier’ water with a lower number of ‘passing’ parameters,
+					while <b>lighter and bluer colors</b> represent ‘cleaner’ water with a higher number of ‘passing’ parameters.</p>
+			</span>			
+			
+			
+
+			
+
+		</article>
+
+
+		<!-- Discussion section -->
+		<article id="discussion" style="margin-left: 100px; margin-right: 100px;">
+			<br>
+			<span class="discussion">
+				<p class="heading-1">To better understand, <b style="color: maroon;">let's discuss!</b></p>
+				<br><br>
+				<p class="heading-4" style="text-align: justify; margin: 20px;">The results of the exploratory data analysis (EDA) support our hypotheses that there has been a significant change in the water quality parameters across various water bodies from 2019 to 2021. Our nutshell plot also shows a general improvement in terms of water quality in rivers around the Philippines during this period. This upward trend in water quality in our rivers holds great promise for the future of water quality and this suggests that efforts to minimize waste output into rivers have been somewhat effective. Moreover, the findings of our EDA could reflect on future clean-up initiatives and policy implementations to effectively address problems in water quality, availability, and sanitation, especially in rural areas.</p>
+				<br>
+				
+				<span class="rq-disc">
+					<span>
+						<p class="heading-4" style="margin: 20px;">
+							<b>First research question: How do water quality parameters vary across different regions and water bodies in the Philippines?</b>
+						</p>
+						<p style="margin: 20px; text-align: justify;">
+							Our analysis shows that while some parameters like pH, temperature, and dissolved oxygen (DO) are relatively uniform across regions, others such as total suspended solids (TSS), nitrate, fecal coliform, chloride, color, biochemical oxygen demand (BOD), and phosphate exhibit significant variability especially in Urban Regions (NCR, Region 3, Region IV-A, Region 11, Region 12). This variability highlights regions that are more vulnerable to pollution. For instance, higher levels of pollutants like chloride, fecal coliform, color, BOD, and phosphate indicate urban runoff, industrial discharge, and sewage, pointing to pollution sources that need to be addressed. This information is crucial for future interventions such that clean-up organizations and policymakers would be able to target pollution sources more effectively.
+						</p>
+					</span>
+					<br>
+					<span>
+						<p class="heading-4" style="margin: 20px;">
+							<b>Secondary research question: How have the water quality parameters for each waterbody changed from 2019 to 2021?</b>
+						</p>
+						<p style="margin: 20px; text-align: justify;">
+							The temporal analysis of water quality parameters from 2019 to 2021 reveals notable trends such as a steady increase in most parameters (pH, Dissolved Oxygen (DO), Chloride, Color, and Biochemical Oxygen Demand) while the only parameter that showed a decrease in levels for three years was temperature. However, certain regions (Regions 3, 4A, 11, 12, and 13) exhibit relatively higher levels of these parameters, indicating persistent pollution issues. This could help in identifying which region and waterbody needs to be prioritized the most depending on the trends of their respective water quality parameters.
+						</p>
+					</span>
+					<br>
+					<span>
+						<p class="heading-4" style="margin: 20px;">
+							<b>Socio-Economic Impacts</b>
+						</p>
+						<p style="margin: 20px; text-align: justify;">
+							Our findings could have profound impacts for the socio-economic landscape of the Philippines. Having better insights on water pollution countermeasures and improved water quality can positively impact livelihoods, public health, and biodiversity. 
+							<ul>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Livelihood (Fishing, Tourism, Economy):</b> Cleaner bodies of water support better fishing conditions and enhance tourism, contributing positively to the economy.
+								</li>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Public Health (Sanitation, Access to Clean Water):</b> Cleaner water reduces waterborne diseases, improving public health and reducing healthcare costs.
+								</li>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Biodiversity (Ecosystem):</b> Improved water quality sustains aquatic life and biodiversity, supporting ecosystem health and resilience.
+								</li>
+							</ul>
+						</p>
+					</span>
+					<br>
+					<span>
+						<p class="heading-4" style="margin: 20px;">
+							<b>Limitations: Our data analysis was also constrained by factors in data availability, domain knowledge, and analysis technique.</b>
+						</p>
+						<p style="margin: 20px; text-align: justify;">
+							<ul>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Data Availability:</b> We employed purposive sampling to gather data that includes our desired variables. Purposive sampling in our research context introduces potential biases such as generalizability and sampling frame bias. Additionally, Our data was sourced from government websites, which had gaps that we addressed during preprocessing (e.g., calculating averages), potentially introducing statistical noise that affected the overall accuracy. External factors such as the pandemic and unknown data collection methods by our sources introduce uncertainties that could have influenced their data, thereby impacting our analysis.
+								</li>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Domain Knowledge:</b> We lack expertise in the field of water quality and sanitation, resulting in an incomplete understanding of water quality parameters and their interactions. This deficiency affects our analysis and interpretation.
+								</li>
+								<li style="margin-left: 40px; margin-right: 20px; text-align: justify;">
+									<b>Analysis Technique:</b> We employed MANOVA as our statistical technique for hypothesis testing because we aimed to explore potential correlations among multiple variables. Consequently, the results would be complex and interpreting them can be challenging due to its multivariate nature. MANOVA is also sensitive to outliers and missing data. We addressed outliers by employing log transformations and handled missing data by either computing averages or removing those cases entirely. Overall, our analysis technique is subject to several limitations that are heavily dependent on the organization and cleanliness of our data, which in turn, affects the accuracy of the results.
+								</li>
+							</ul>
+						</p>
+						<p style="margin: 20px; text-align: justify;">
+							Moving forward, to mitigate the impact of these challenges, we plan to implement several strategies. Firstly, to address our lack of domain knowledge, we will <b>collaborate with experts</b> in water quality and sanitation to gain deeper insights into relevant parameters and their interrelationships. Furthermore, we intend to <b>explore advanced analysis techniques</b>, including machine learning algorithms, to better understand and interpret the data, taking into account potential biases in data collection. By adopting these approaches, we aim to improve the accuracy of our future analyses.
+						</p>
+					</span>
+				</span>
+				<br>
+			</span>
+		</article>
+
+		<!-- Conclusion and Discussion section -->
+		<article id="conclusion" style="margin-left: 100px; margin-right: 100px;">
+			<p class="heading-2"><br>In conclusion,</p><br><br>
+			<div class="conclusion">
+				<p>
+					There is a significant change in the water quality parameters in the various water bodies from 2019 to 2021. Our nutshell plot shows this <b  style="color: #191970;">general improvement in terms of water quality</b> in rivers around the Philippines from 2019 to 2021.
+				</p>
+				<br>
+				<p>
+					The variability of parameters such as total suspended solids (TSS), nitrate, fecal coliform, chloride, color, biochemical oxygen demand (BOD), and phosphate highlights regions with potential pollution concerns. <b style="color: maroon;">Regions 3, 4A, 11, 12, and 13</b> exhibit relatively higher levels of these parameters, indicating <b style="color: maroon;">persistent pollution issues</b>.
+				</p>
+			</div>
+			
+			<br><br><br><br><br><br><br>
+
+			<div class="add-margin">
+				<p class="heading-4" style="text-align: justify;">
+					How is our study important and relevant to the current status of our rivers and other water bodies?
+				</p>
+				<br>
+				<ul style="margin-left: 40px; margin-right: 40px;">
+					<li style="margin-bottom: 20px; text-align: justify;">
+						<b>Determining Trends and Changes</b> - By analyzing water quality parameters over time (2019 to 2021), our study reveals trends and changes in the quality of water bodies in the Philippines. These findings can help determine whether policies and programs aimed at improving water quality are effective.
+					</li>
+					<li style="margin-bottom: 20px; text-align: justify;">
+						<b>Identifying Pollution Hotspots</b> - Our study identifies specific regions (such as Regions 3, 4A, 11, 12, and 13) with higher levels of pollutants such as total suspended solids, nitrate, fecal coliform, chloride, color, BOD, and phosphate. This observation is important for allocating resources and funds to address persistent water pollution issues in these areas.
+					</li>
+					<li style="margin-bottom: 20px; text-align: justify;">
+						<b>Aiming a Data-Driven Advocacy</b> - Authorities and stakeholders can refer to our study findings to improve existing policies and implement new programs focused on improving water quality. Additionally, the data and findings from our study can serve as a foundation for advocacy efforts aimed at raising awareness of these issues and promoting sustainable practices that protect and improve our water resources.
+					</li>
+					<li style="margin-bottom: 20px; text-align: justify;">
+						<b>Contributing to Sustainable Development Goals (SDGs)</b>: SDG 6 aims to ensure the availability and sustainable management of water and sanitation for all. Our study contributes directly to monitoring progress toward this goal in the Philippines, providing valuable information on the country’s efforts and challenges in achieving clean water and sanitation.
+					</li>
+				</ul>
+			</div>
+
+			<div class="add-margin">
+				<p style="font-size: 30px;">So, what shall we Filipinos do now?</p>
+				<br>
+				<ul style="margin-left: 40px; margin-right: 40px; text-align: justify;">
+					<li style="margin-bottom: 10px;">
+						Encourage local communities to engage in monitoring water quality in their areas.
+					</li>
+					<li style="margin-bottom: 10px;">
+						Advocate for stronger environmental regulations and policies at the local, regional, and national levels.
+					</li>
+					<li style="margin-bottom: 10px;">
+						Raise awareness about sustainable practices that protect water resources.
+					</li>
+					<li style="margin-bottom: 10px;">
+						Organize or participate in community clean-up drives and conservation efforts for rivers, lakes, and coastal areas.
+					</li>
+					<li style="margin-bottom: 10px;">
+						For communities and industries located in regions with persistent pollution issues, consider investing in water treatment technologies.
+					</li>
+					<li style="margin-bottom: 10px;">
+						Integrate research findings into educational curricula and community outreach programs to educate the younger generation about the importance of clean water and sustainable water management practices.
+					</li>
+				</ul>
+				<br><br><br><br>
+				<p class="heading-3">Together, let us utilize the insights from this study to take proactive steps towards ensuring<a style="color: blue;"> clean water</a> for present and future generations!</p>
+			</div>
+		</article>
+			
+
+
+		<!-- Team section -->
+		<article id="team">
+			<p class="heading-2" style="color: white;"><br>Contact Us</p>
+			<div class="">
+				<div class="ov-text">
+					<div>
+						<img class="image-w-text" src="/images/team/yanni.jpg">
+						
+						<p class="mem-name">Yanni Ella</p>
+						<p class="mem-text">
+							I’m Yanni, a 2nd-year Computer Science undergraduate student at the University of the Philippines Diliman. I have a strong passion for learning new things and thrive on challenges and competition. My enthusiasm for exploring innovative solutions and my dedication for continuous learning drive me to pursue computer science. I’m excited to apply make more meaningful contributions to the field.
+							<br><br>
+							I enjoy playing competitive games such as Valorant and League of Legends. My competitive spirit extends beyond gaming- I also love playing sports and travel adventures. To unwind, I enjoy binge-watching movies and series.
+							<br><br>
+							<strong>Email:</strong> ycella@up.edu.ph
+							<br>
+							<strong>Facebook:</strong> fb.com/YanniJoseElla
+						</p>
+					</div>
+					
+					<div>
+						<img class="image-w-text" src="/images/team/jensen.jpg">
+						
+						<p class="mem-name">Jensen Rabatan</p>
+						<p class="mem-text">
+							Hello! I'm Jensen and I'm a 2nd-year Computer Science student at the University of the Philippines Diliman. I’m fueled by instant coffee and I have a passion for gaming. I even started programming so I could start developing my own games.
+							<br><br>
+							I constantly try to improve my skills, tackling new challenges everyday. This extends to gaming as well. I find immense satisfaction in playing difficult games like Dark Souls and Hollow Knight because of how rewarding overcoming their challenges can be.
+							<br><br>
+							<strong>Email:</strong> jmrabatan@up.edu.ph
+							<br>
+							<strong>Github:</strong> @JRabatan
+							<br>
+							<strong>Facebook:</strong> Jensen Rabatan
+						</p>
+					</div>
+	
+					<div>
+						<img class="image-w-text" src="/images/team/dean.jpg">
+						
+						<p class="mem-name">Dean Ramirez</p>
+						<p  class="mem-text">
+							I'm Dean, a 4th-year Computer Science student at the University of the Philippines Diliman. I have a knack for solving small personal problems using applications that I built myself. This involves the use of data science, research, and software/web development.
+							<br><br>
+							I enjoy arts and music as much as I enjoy programming and solving problems on my own. I also love playing games and writing poetry. Naturally, my hobby is finding more hobbies to try!
+							<br><br>
+							<strong>Email:</strong> dpramirez@up.edu.ph
+							<br>
+							<strong>Github:</strong> @ansem7
+							<br>
+							<strong>Facebook:</strong> Dean Ramirez
+						</p>
+					</div>
+
+					<div>
+						<img class="image-w-text" src="/images/team/nadinne.jpg">
+						
+						<p class="mem-name">Nadinne Sumulong</p>
+						<p class="mem-text">
+							Hi! I’m Nadinne, a 4th-year Computer Science student at the University of the Philippines Diliman, currently in my final semester! Right now, I’m busy preparing for the job hunting season and finishing my thesis. Exciting times ahead!
+							<br><br>
+							I’m passionate about leadership and volunteering, both within and beyond the university. I thrive in event organization and love being part of the core team—it energizes me and gives me a sense of purpose. Whether it's leading a project or lending a hand, I’m always eager to contribute and make a difference!
+							<br><br>
+							<strong>Email:</strong> njsumulong@up.edu.ph
+							<br>
+							<strong>Github:</strong> @sumulongnj
+							<br>
+							<strong>Facebook:</strong> Nadinne Sumulong
+						</p>
+					</div>
+				</div>
+				<br><br>
+				<p style="font-size: 15px; text-align: center; color: gray;">© 2024 Water Boys</p>
+			</div>
+		</article>
+			
+
+
+
+
+		<script src="/js/main.js"></script>
+	</body>
+</html>
